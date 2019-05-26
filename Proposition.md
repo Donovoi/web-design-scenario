@@ -27,7 +27,7 @@ businessmanager@tigerpaws.com.au
 
 ## Introduction
 
-Tiger Paws a botique stuffed toy retail outlet, has requested a website consisting of a home page, a **Catalog** page, a **Discussion** page, and a **Communication** page. This proposal is written to Tiger Paws to outline their needs and how we at Skillage I.T can ensure they are met within the guidelines mentioned below.
+Tiger Paws a botique stuffed toy retail outlet, has requested a website consisting of a home page, a **Catalog** page, a **Discussion** page, and a **Communication** page. This proposal is written to Tiger Paws to outline their needs and how we at Skillage I.T can ensure they are met within the guidelines mentioned in this document.
 
 Skillage I.T has a strong background of building websites and offering I.T solutions, including but not limited to:
 
@@ -39,6 +39,13 @@ Skillage I.T has a strong background of building websites and offering I.T solut
 
 4. **Web Site design & Hosting**. Most importantly in Tiger Paws' case, we offer a complete package of ***Website Design, Development, Testing, and Hosting*** on our cloud infrastructure.
 
+*[Problem Statement](#Problem-Statement)  
+[Goals/proposed solutions](#Goals/proposed-Solutions)  
+[Standard package breakdown](#Standard-package-breakdown)  
+[Extras](#Extras)  
+[Testimonials](#Testimonials)  
+[Next steps](#Next-steps)  
+[Terms and conditions & signature page](#Terms-and-conditions-&-signature-page)*  
 
 ## Problem statement
 
