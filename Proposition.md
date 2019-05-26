@@ -1,4 +1,5 @@
-# ![Skillage I.T](logo.png "Skillage I.T &copy;")  
+![Skillage I.T](logo.png "Skillage I.T &copy;")
+
 <div style="text-align:left; display:inline;">  
 
 **Address:**  
@@ -76,14 +77,15 @@ Tiger Paws have advised that the site does not need to be responsive in design (
 
 As we are expecting elderly/disabled users accessing the site, we will need to ensure that the site is compliant with the **Web Content Accessibility Guidelines Version 2.0** (WCAG) AA standard.
 
-
 ## Standard package breakdown
 
-The site will be designed primarily with the Bootstrap Framework and Javascript for the user Interface.
-
-We are looking to use C# for controlling the server processing.
-
+The site will be designed primarily with the Bootstrap Framework and Javascript for the user Interface.  
+We are looking to use C# for controlling the server processing.  
 SQL will be used for the handling and storage of any data.
+
+**Professionally designed logo** - $1000 - We will work with Tiger Paws to design a logo that suits their needs and catches the eye of any would be consumer. Our proof of concept is below:
+
+<img src= ".\tiger-paws.png" width="250px" height="250px" alt="Tiger Paws Logo" Title="Tiger Paws Logo">
 
 **Home Page** - $600 - A responsive homepage with logo designed by Skillage I.T. This is to contain specials and announcements for the Tiger Paws community.
 
