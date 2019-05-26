@@ -83,9 +83,13 @@ The site will be designed primarily with the Bootstrap Framework and Javascript 
 We are looking to use C# for controlling the server processing.  
 SQL will be used for the handling and storage of any data.
 
-**Professionally designed logo** - $1000 - We will work with Tiger Paws to design a logo that suits their needs and catches the eye of any would be consumer. Our proof of concept is below:
+**Professionally designed logo and site theme** - $1000 - We will work with Tiger Paws to design a logo that suits their needs and catches the eye of any would be consumer. Our proof of concept is below:
 
 <img src= ".\tiger-paws.png" width="250px" height="250px" alt="Tiger Paws Logo" Title="Tiger Paws Logo">
+
+As per our provided logo, the site colours will be Orange #e78200, light Orange #fac175, and black #000000.  
+
+The font to be used on the site will be a mixture of **Emilys Candy** (same as logo), and **Kranky**.
 
 **Home Page** - $600 - A responsive homepage with logo designed by Skillage I.T. This is to contain specials and announcements for the Tiger Paws community.
 
