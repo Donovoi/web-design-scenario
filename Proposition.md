@@ -159,11 +159,35 @@ When a user clicks on an image to get more info, there will be a modal show on t
 
 Here the user can choose to add it to their Kart, or just simply read about the item.
 
-### **FORUM (Community Discussion page)** - $600
+### **FORUM (Community Discussion page)** - $800
 
 A responsive Community Discussion Forum designed by Skillage I.T.
 
 <img src=".\screens\forum.png" width="500px" height="300px" alt="Forum Page" Title="Forum Page">
+
+Starting from the top, we have exactly the same format as all other pages. With the **Logo**, **Explore**, **Forum**, and **Contact** buttons all in the same position.
+
+There will be a short introduction to the page up the top in the centre.
+
+<img src=".\screens\intro-forum.png" width="500px" height="300px" alt="Introduction to the forum" Title="Introduction to the forum">
+
+In the middle of the page we will show the top discussion happing, with the most popular ones on the top left in a descending order from left to right.
+
+<img src=".\screens\top-discussions.png" width="500px" height="300px" alt="Discussions" Title="Discussions">
+
+Each discussion will appear as a card with a picture accompanied by a heading, a body of text, a like button with a count, a comment button with a count, and a share button.
+
+If the user clicks on the card, they will see a pop-up modal that allows them to view comments and/or join in the discussion.
+
+<img src=".\screens\posts-and-comments.png" width="400px" height="300px" alt="Comment Modal" Title="Comment Modal">
+
+They can also click on the profile picture to view a larger image of each user.
+
+Over to the right of the forum page, the user will see a **_Trending Posts_** card. This will be an item to show posts that may not have many comments, or post that are in the best interests of the business to show.
+
+<img src=".\screens\trending posts.png" width="200px" height="300px" alt="Trending Posts Card" Title="Trending Posts Card">
+
+Down the bottom right of the Forum page, we will have the buttons that are on each page to share to various platforms.
 
 
 
