@@ -95,7 +95,7 @@ The font to be used on the site will be a mixture of **Emilys Candy** (same as l
 
 A responsive homepage with logo designed by Skillage I.T.
 
-<img src=".\screens\homepage.png" width="400px" height="250px" alt="Tiger Paws Homepage" Title="Tiger Paws Homepage">
+<img src=".\screens\homepage.png" width="500px" height="300px" alt="Tiger Paws Homepage" Title="Tiger Paws Homepage">
 
 The layout will be a grid layout with a short introduction and title in the middle of the page.  
 <img src=".\screens\introduction.png" width="500px" height="300px" alt="Introduction" Title="Introduction"> 
@@ -114,7 +114,7 @@ Up the top of the page there will be a navigation bar with the Tiger Paws Logo a
   
 * **Communication** (will be called CONTACT)
 
-There are also three other buttons on the top right of the page -  
+There are also three other buttons on the top right of all pages -  
 
 * **Magnifying Glass** - For the user to search any content throughout the site.
 
@@ -140,7 +140,30 @@ Lastly, on the bottom right of each page, to keep up with current trends, there 
 
 A responsive Catalogue page designed by Skillage I.T.  
 
- <img src=".\screens\catalogue.png" width="400px" height="250px" alt="Tiger Paws Homepage" Title="Tiger Paws Homepage">
+ <img src=".\screens\catalogue.png" width="500px" height="300px" alt="Catalogue Page" Title="Catalogue Page">
+
+The layout will take it's style from the home pages' grid layout.
+
+Starting from the top will be the navigation bar (uniform for all pages).
+
+The Tiger Paws logo will be a link be to the home page.
+With all other links in the navigation bar exactly the same as the home page.
+
+Under the navigation bar will be a catalogue of items, which will be displayed as a grid, the user able to scroll down continuously as more content loads just out of the viewport.
+
+<img src=".\screens\catalogue-grid.png" width="500px" height="500px" alt="Catalogue Grid" Title="Catalogue Grid">
+
+When a user clicks on an image to get more info, there will be a modal show on the right that has information and pricing.  
+
+<img src=".\screens\pricing.png" width="300px" height="250px" alt="Pricing Modal" Title="Pricing Modal">
+
+Here the user can choose to add it to their Kart, or just simply read about the item.
+
+### **FORUM (Community Discussion page)** - $600
+
+A responsive Community Discussion Forum designed by Skillage I.T.
+
+<img src=".\screens\forum.png" width="500px" height="300px" alt="Forum Page" Title="Forum Page">
 
 
 
