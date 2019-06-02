@@ -91,9 +91,48 @@ As per our provided logo, the site colours will be Orange #e78200, light Orange 
 
 The font to be used on the site will be a mixture of **Emilys Candy** (same as logo), and **Kranky**.
 
-**Home Page** - $600 - A responsive homepage with logo designed by Skillage I.T. This is to contain specials and announcements for the Tiger Paws community.
+**Home Page** - $600 - A responsive homepage with logo designed by Skillage I.T. <img src=".\screens\homepage.png" width="400px" height="250px" alt="Tiger Paws Homepage" Title="Tiger Paws Homepage">
 
-No extra cost - Ensure site is compatible with all modern day browsers
+The layout will be a grid layout with a short introduction and title in the middle of the page.  
+<img src=".\screens\introduction.png" width="500px" height="300px" alt="Introduction" Title="Introduction"> 
+
+The will be a card on the top left for **Announcements** with an ability to add a picture in the light orange area.  
+<img src=".\screens\announcements.png" width="200px" height="300px" alt="Announcements Card" Title="Announcements Card">  
+
+Underneath the introduction, there will be a grid of specials and community posts to entice users to join the site. This will be a scroll-able page that loads new content as you scroll down further.  
+<img src=".\screens\specialsgrid.png" width="500px" height="300px" alt="Specials Grid" Title="Specials Grid">
+
+Up the top of the page there will be a navigation bar with the Tiger Paws Logo and links to the three other pages -
+
+* **Catalogue** (will be called EXPLORE)
+  
+* **Discussion** (will be called FORUM)  
+  
+* **Communication** (will be called CONTACT)
+
+There are also three other buttons on the top right of the page -  
+
+* **Magnifying Glass** - For the user to search any content throughout the site.
+
+* **Alerts Button** - For the user to see if they have any post of messages from other users that relate to them.
+
+* **My Profile** - For the user to login and customize their profile to their liking. Also for storing information about the user i.e email, phone number, address etc...
+
+<img src=".\screens\navbar.png" width="600px" height="20px" alt="Navigation Bar" Title="Navigation Bar">
+
+Lastly, on the bottom right of each page, to keep up with current trends, there will be a button for the following -
+
+* **Instagram** - Share the page/image/community post/announcement with your Instagram followers.
+
+* **Twitter** - Share the page/image/community post/announcement with your Twitter followers.
+
+* **Facebook** - Share the page/image/community post/announcement with your Facebook friends.
+
+* **World Wide Web** - Share the page/image/community post/announcement by copying the url to the clipboard and posting it to the world.
+
+<img src=".\screens\share.png" width="300px" height="50px" alt="Share Buttons" Title="Share Buttons">
+
+**No extra cost** - Ensure site is compatible with all modern day browsers
 ## Extras
 
 ## Testimonials
