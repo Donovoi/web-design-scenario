@@ -1,4 +1,4 @@
-![Skillage I.T](logo.png "Skillage I.T &copy;")
+![Skillage I.T](\logos/logo.png "Skillage I.T &copy;")
 
 <div style="text-align:left; display:inline;">  
 
@@ -91,7 +91,10 @@ As per our provided logo, the site colours will be Orange #e78200, light Orange 
 
 The font to be used on the site will be a mixture of **Emilys Candy** (same as logo), and **Kranky**.
 
-### **Home Page** - $600
+* Please note colours and backgrounds used in the examples, do not represent the finished product as we will work with Tiger Paws to get a complete colour theme, this will take a lot of back and fourth over a course of a few months.
+Also because of the potentially elderly customer base, we will need to ensure everything is A11y compliant before release.
+
+### **Home Page** - $600 (2-3 Months)
 
 A responsive homepage with logo designed by Skillage I.T.
 
@@ -136,7 +139,7 @@ Lastly, on the bottom right of each page, to keep up with current trends, there 
 
 <img src=".\screens\share.png" width="300px" height="50px" alt="Share Buttons" Title="Share Buttons">
 
-### **EXPLORE (Catalogue page)** - $600
+### **EXPLORE (Catalogue page)** - $600 (2-3 Months)
 
 A responsive Catalogue page designed by Skillage I.T.  
 
@@ -149,7 +152,13 @@ Starting from the top will be the navigation bar (uniform for all pages).
 The Tiger Paws logo will be a link be to the home page.
 With all other links in the navigation bar exactly the same as the home page.
 
-Under the navigation bar will be a catalogue of items, which will be displayed as a grid, the user able to scroll down continuously as more content loads just out of the viewport.
+In the middle under the navigation bar, will be a title asking the user to select their category from the 5 that are provided.  
+
+Below the title will be the 5 catagories with a title and a bit of information in the body. 
+
+ <img src=".\screens\select-category.png" width="200px" height="300px" alt="Category Selection" Title="Category Selection">
+
+Under the navigation bar to the left will be a catalogue of items, which will be displayed as a grid, the user is able to scroll down continuously as more content loads just out of the viewport.
 
 <img src=".\screens\catalogue-grid.png" width="500px" height="500px" alt="Catalogue Grid" Title="Catalogue Grid">
 
@@ -159,7 +168,7 @@ When a user clicks on an image to get more info, there will be a modal show on t
 
 Here the user can choose to add it to their Kart, or just simply read about the item.
 
-### **FORUM (Community Discussion page)** - $800
+### **FORUM (Community Discussion page)** - $800 (12-24 Months)
 
 A responsive Community Discussion Forum designed by Skillage I.T.
 
@@ -189,13 +198,70 @@ Over to the right of the forum page, the user will see a **_Trending Posts_** ca
 
 Down the bottom right of the Forum page, we will have the buttons that are on each page to share to various platforms.
 
+### **CONTACT (Contact Us page)** - $600 (2-3 Months)
 
+<img src=".\screens\contact-form.png" width="500px" height="300px" alt="Contact Us Form" Title="Contact Us Form">
 
-**No extra cost** - Ensure site is compatible with all modern day browsers
+The last page will be the Contact page, allowing users to get in touch with Tiger Paws via email. It also hosts their other contact details so users can get in touch any other way. 
+
+On the page, the same template as the other pages still applies. With the Navigation bar having the same buttons, and the share buttons down the button right being exactly the same.
+
+**Total Time and Costs**
+
+33 Months (Maximum)  
+$2600
+
 ## Extras
+**No extra cost** - Ensure site is compatible with all modern day browsers
+
+**Online Backup** - **$40 per month**  
+ Allow Tiger Paws to ensure they always stay online, wth regular backups sent to the cloud occuring nightly.
+
+ **Online Payment Processing** - **$2 per transaction & 3% payment fee**
+
+We are happy to provide Tiger Paws with the payment processing tools to allow them to manage online payments. 
+
+**Online Shopping** - $600 an additional page that will allow users to post their products and sell them via Tiger Paws store, ensuring Tiger Paws get paid and get traffic to their website. 
+
+
+
 
 ## Testimonials
 
+*"The Greatest Company I've ever dealt with. Really helped me get my site up and running"* - **Bill Gates from Microsoft**
+
+*"Fantastic Service, Couldn't be happier"* - **Joseph Stalin from USSR**
+
+*"5 out 7, Comparable service"* - **Dave from the internet**
+
 ## Next steps
 
+The next steps are important as we will need to get started as soon as possible to avoid any further losses to the business. 
+
+If you choose to proceed, our next steps will be - 
+
+1. **Package Customization** - We will work with you to alter the standard web design package to fit your needs, incorporating extras as requested. Once all services are agreed upon, we will finalize our contract with you. This will take 1-2 days.
+
+2. **Website Creation** - We will begin the work on the site and ensure compatibility on all browsers. To be completed in about 33 months.
+
+3. **Website Regression Testing** - Our developers and testers will do continuous testing on all browsers to ensure everything is working well before release. This will take 1-2 hours (possibly less).
+
+Our website testing procedure normally consists of a team of 4 people using web browsers on both desktop, laptops, Android, and IOS devices. They will click on every button and if they find any bugs, this will be sent to the development team who will then put up the fix to a staging build so the testers can test again before we roll the fix out to production.
+
+We will be asking Tiger Paws to also test the staging site so they are happy with the build before we roll out to production.
+
+If all goes well and we are W3C, and A11y compliant, we will roll out the build to the live production site.  
+
+
 ## Terms and conditions & signature page
+
+This Proposal will be sent via email, it is written in Markdown, so it is recommended you view it in a Mark viewer. Something free like Typora is a great option.
+
+We have attached the WireFrames used as XD files, but also as PDF files so you can view them at your leisure.
+
+
+Please let us know if you have any questions by responding with the contact details at the top of the document.
+
+Or simply sign on the line and send through the completed Document to Skillage I.T.
+
+# Sign Here _____________________
