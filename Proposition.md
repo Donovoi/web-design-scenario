@@ -91,7 +91,11 @@ As per our provided logo, the site colours will be Orange #e78200, light Orange 
 
 The font to be used on the site will be a mixture of **Emilys Candy** (same as logo), and **Kranky**.
 
-**Home Page** - $600 - A responsive homepage with logo designed by Skillage I.T. <img src=".\screens\homepage.png" width="400px" height="250px" alt="Tiger Paws Homepage" Title="Tiger Paws Homepage">
+### **Home Page** - $600
+
+A responsive homepage with logo designed by Skillage I.T.
+
+<img src=".\screens\homepage.png" width="400px" height="250px" alt="Tiger Paws Homepage" Title="Tiger Paws Homepage">
 
 The layout will be a grid layout with a short introduction and title in the middle of the page.  
 <img src=".\screens\introduction.png" width="500px" height="300px" alt="Introduction" Title="Introduction"> 
@@ -131,6 +135,14 @@ Lastly, on the bottom right of each page, to keep up with current trends, there 
 * **World Wide Web** - Share the page/image/community post/announcement by copying the url to the clipboard and posting it to the world.
 
 <img src=".\screens\share.png" width="300px" height="50px" alt="Share Buttons" Title="Share Buttons">
+
+### **EXPLORE (Catalogue page)** - $600
+
+A responsive Catalogue page designed by Skillage I.T.  
+
+ <img src=".\screens\catalogue.png" width="400px" height="250px" alt="Tiger Paws Homepage" Title="Tiger Paws Homepage">
+
+
 
 **No extra cost** - Ensure site is compatible with all modern day browsers
 ## Extras
