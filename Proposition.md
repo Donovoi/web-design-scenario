@@ -1,4 +1,4 @@
-![Skillage I.T](\logos/logo.png "Skillage I.T &copy;")
+![Skillage I.T](.\logos\logo.png "Skillage I.T &copy;")
 
 <div style="text-align:left; display:inline;">  
 
