@@ -29,7 +29,7 @@ businessmanager@tigerpaws.com.au
 
 ## Introduction
 
-Tiger Paws a botique stuffed toy retail outlet, has requested a website consisting of a home page, a **Catalog** page, a **Discussion** page, and a **Communication** page. This proposal is written to Tiger Paws to outline their needs and how we at Skillage I.T can ensure they are met within the guidelines mentioned in this document.
+Tiger Paws a botique stuffed toy retail outlet, has requested a website consisting of a **Home Page**, a **Catalog** page, a **Discussion** page, and a **Communication** page. This proposal is written to Tiger Paws to outline their needs and how we at Skillage I.T can ensure they are met within the guidelines mentioned in this document.
 
 Skillage I.T has a strong background of building websites and offering I.T solutions, including but not limited to:
 
@@ -39,7 +39,7 @@ Skillage I.T has a strong background of building websites and offering I.T solut
 
 3. **Online Shopping**. We provide a simple shopping service where our clients can list their items for sale on our Web Portal and their customers can browse, purchase and review utilizing our state of the art infrastructure.
 
-4. **Web Site design & Hosting**. Most importantly in Tiger Paws' case, we offer a complete package of ***Website Design, Development, Testing, and Hosting*** on our cloud infrastructure.
+4. **Web Site Design & Hosting**. Most importantly in Tiger Paws' case, we offer a complete package of ***Website Design, Development, Testing, and Hosting*** on our cloud infrastructure.
 
 *[Problem Statement](#Problem-Statement)  
 [Goals/proposed solutions](#Goals/proposed-Solutions)  
@@ -49,11 +49,11 @@ Skillage I.T has a strong background of building websites and offering I.T solut
 [Next steps](#Next-steps)  
 [Terms and conditions & signature page](#Terms-and-conditions-&-signature-page)*  
 
-## Problem statement
+## Problem Statement
 
 Lately Tiger Paws has noticed some drastic loss in revenue, and after surveying their customers, they've found that it is due to one main issue *"Time"*. This is due to the commitments of a modern day family and the fact that it is very hard to find time out of a busy family schedule to go stuffed toy shopping.
 
-This loss of revenue is also due to the fact the Tiger Paws does not have an online presence. In our experiences we've found that stores without an online presence go out of business generally very quickly unless we can get them a Website Designed by specialist I.T professionals.
+This loss of revenue is also due to the fact the Tiger Paws does not have an online presence. In our experiences we've found that stores without an online presence go out of business generally very quickly unless we can get them a website designed by specialist I.T professionals.
 
 The user base is found to be parents in their 20s with some grandparents and great grandparents in the mix. It seems the older generation has been with Tiger Paws for a long time, so we will need to ensure catering for the accessability of the older generations.  
 
@@ -61,9 +61,9 @@ The user base is found to be parents in their 20s with some grandparents and gre
 
 As per the conversation with Tiger Paws, to address these concerns we will need to design a website that contains the following:
 
-* A **Home Page**  - where people can see specials that they have along with any announcements they would like the community to know about. This needs to incorporate a new logo designed by Skillage I.T.
+* **A Home Page** - Where people can see specials that they have along with any announcements they would like the community to know about. This needs to incorporate a new logo designed by Skillage I.T.
 
-* A **Catalog Page**  - showing the different stuffed toys they have available for purchase. Needs to be an online catalog and not a sales focussed shopping page.
+* A **Catalog Page**  - Showing the different stuffed toys they have available for purchase. Needs to be an online catalog and not a sales focussed shopping page.
 
 * A **Discussion Page**  - Where Tiger Paws members can post and have discussions with other community members.
 
@@ -85,7 +85,7 @@ SQL will be used for the handling and storage of any data.
 
 **Professionally designed logo and site theme** - $1000 - We will work with Tiger Paws to design a logo that suits their needs and catches the eye of any would be consumer. Our proof of concept is below:
 
-<img src= ".\tiger-paws.png" width="250px" height="250px" alt="Tiger Paws Logo" Title="Tiger Paws Logo">
+<img src=".\logos\tiger-paws.png" width="250px" height="250px" alt="Tiger Paws Logo" Title="Tiger Paws Logo">
 
 As per our provided logo, the site colours will be Orange #e78200, light Orange #fac175, and black #000000.  
 
@@ -251,7 +251,6 @@ Our website testing procedure normally consists of a team of 4 people using web 
 We will be asking Tiger Paws to also test the staging site so they are happy with the build before we roll out to production.
 
 If all goes well and we are W3C, and A11y compliant, we will roll out the build to the live production site.  
-
 
 ## Terms and conditions & signature page
 
