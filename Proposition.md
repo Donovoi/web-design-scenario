@@ -190,13 +190,13 @@ They can also click on the profile picture to view a larger image of each user.
 
 Over to the right of the forum page, the user will see a **_Trending Posts_** card. This will be an item to show posts that may not have many comments, or post that are in the best interests of the business to show.
 
-![Comment Modal](.\screens\trending-posts.png "Trending Posts Card")
+![Trending Posts Card](.\screens\trending-posts.png "Trending Posts Card")
 
 Down the bottom right of the Forum page, we will have the buttons that are on each page to share to various platforms.
 
 ### **CONTACT (Contact Us page)** - $600 (2-3 Months)
 
-![Comment Modal](.\screens\contact-form.png "Contact Us Form")
+![Contact Us Form](.\screens\contact-form.png "Contact Us Form")
 
 The last page will be the Contact page, allowing users to get in touch with Tiger Paws via email. It also hosts their other contact details so users can get in touch any other way.
 
