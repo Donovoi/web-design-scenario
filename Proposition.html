@@ -1,587 +1,184 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Proposition.md</title>
-<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-
-<style>
-/*---------------------------------------------------------------------------------------------
- *  Copyright (c) Microsoft Corporation. All rights reserved.
- *  Licensed under the MIT License. See License.txt in the project root for license information.
- *--------------------------------------------------------------------------------------------*/
-
-body {
-	font-family: "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
-	font-size: 14px;
-	padding: 0 12px;
-	line-height: 22px;
-	word-wrap: break-word;
-}
-
-#code-csp-warning {
-	position: fixed;
-	top: 0;
-	right: 0;
-	color: white;
-	margin: 16px;
-	text-align: center;
-	font-size: 12px;
-	font-family: sans-serif;
-	background-color:#444444;
-	cursor: pointer;
-	padding: 6px;
-	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
-}
-
-#code-csp-warning:hover {
-	text-decoration: none;
-	background-color:#007acc;
-	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
-}
-
-
-body.scrollBeyondLastLine {
-	margin-bottom: calc(100vh - 22px);
-}
-
-body.showEditorSelection .code-line {
-	position: relative;
-}
-
-body.showEditorSelection .code-active-line:before,
-body.showEditorSelection .code-line:hover:before {
-	content: "";
-	display: block;
-	position: absolute;
-	top: 0;
-	left: -12px;
-	height: 100%;
-}
-
-body.showEditorSelection li.code-active-line:before,
-body.showEditorSelection li.code-line:hover:before {
-	left: -30px;
-}
-
-.vscode-light.showEditorSelection .code-active-line:before {
-	border-left: 3px solid rgba(0, 0, 0, 0.15);
-}
-
-.vscode-light.showEditorSelection .code-line:hover:before {
-	border-left: 3px solid rgba(0, 0, 0, 0.40);
-}
-
-.vscode-dark.showEditorSelection .code-active-line:before {
-	border-left: 3px solid rgba(255, 255, 255, 0.4);
-}
-
-.vscode-dark.showEditorSelection .code-line:hover:before {
-	border-left: 3px solid rgba(255, 255, 255, 0.60);
-}
-
-.vscode-high-contrast.showEditorSelection .code-active-line:before {
-	border-left: 3px solid rgba(255, 160, 0, 0.7);
-}
-
-.vscode-high-contrast.showEditorSelection .code-line:hover:before {
-	border-left: 3px solid rgba(255, 160, 0, 1);
-}
-
-img {
-	max-width: 100%;
-	max-height: 100%;
-}
-
-a {
-	color: #4080D0;
-	text-decoration: none;
-}
-
-a:focus,
-input:focus,
-select:focus,
-textarea:focus {
-	outline: 1px solid -webkit-focus-ring-color;
-	outline-offset: -1px;
-}
-
-hr {
-	border: 0;
-	height: 2px;
-	border-bottom: 2px solid;
-}
-
-h1 {
-	padding-bottom: 0.3em;
-	line-height: 1.2;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-}
-
-h1, h2, h3 {
-	font-weight: normal;
-}
-
-h1 code,
-h2 code,
-h3 code,
-h4 code,
-h5 code,
-h6 code {
-	font-size: inherit;
-	line-height: auto;
-}
-
-a:hover {
-	color: #4080D0;
-	text-decoration: underline;
-}
-
-table {
-	border-collapse: collapse;
-}
-
-table > thead > tr > th {
-	text-align: left;
-	border-bottom: 1px solid;
-}
-
-table > thead > tr > th,
-table > thead > tr > td,
-table > tbody > tr > th,
-table > tbody > tr > td {
-	padding: 5px 10px;
-}
-
-table > tbody > tr + tr > td {
-	border-top: 1px solid;
-}
-
-blockquote {
-	margin: 0 7px 0 5px;
-	padding: 0 16px 0 10px;
-	border-left: 5px solid;
-}
-
-code {
-	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
-	font-size: 14px;
-	line-height: 19px;
-}
-
-body.wordWrap pre {
-	white-space: pre-wrap;
-}
-
-.mac code {
-	font-size: 12px;
-	line-height: 18px;
-}
-
-pre:not(.hljs),
-pre.hljs code > div {
-	padding: 16px;
-	border-radius: 3px;
-	overflow: auto;
-}
-
-/** Theming */
-
-.vscode-light,
-.vscode-light pre code {
-	color: rgb(30, 30, 30);
-}
-
-.vscode-dark,
-.vscode-dark pre code {
-	color: #DDD;
-}
-
-.vscode-high-contrast,
-.vscode-high-contrast pre code {
-	color: white;
-}
-
-.vscode-light code {
-	color: #A31515;
-}
-
-.vscode-dark code {
-	color: #D7BA7D;
-}
-
-.vscode-light pre:not(.hljs),
-.vscode-light code > div {
-	background-color: rgba(220, 220, 220, 0.4);
-}
-
-.vscode-dark pre:not(.hljs),
-.vscode-dark code > div {
-	background-color: rgba(10, 10, 10, 0.4);
-}
-
-.vscode-high-contrast pre:not(.hljs),
-.vscode-high-contrast code > div {
-	background-color: rgb(0, 0, 0);
-}
-
-.vscode-high-contrast h1 {
-	border-color: rgb(0, 0, 0);
-}
-
-.vscode-light table > thead > tr > th {
-	border-color: rgba(0, 0, 0, 0.69);
-}
-
-.vscode-dark table > thead > tr > th {
-	border-color: rgba(255, 255, 255, 0.69);
-}
-
-.vscode-light h1,
-.vscode-light hr,
-.vscode-light table > tbody > tr + tr > td {
-	border-color: rgba(0, 0, 0, 0.18);
-}
-
-.vscode-dark h1,
-.vscode-dark hr,
-.vscode-dark table > tbody > tr + tr > td {
-	border-color: rgba(255, 255, 255, 0.18);
-}
-
-.vscode-light blockquote,
-.vscode-dark blockquote {
-	background: rgba(127, 127, 127, 0.1);
-	border-color: rgba(0, 122, 204, 0.5);
-}
-
-.vscode-high-contrast blockquote {
-	background: transparent;
-	border-color: #fff;
-}
-</style>
-
-<style>
-/* Tomorrow Theme */
-/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
-/* Original theme - https://github.com/chriskempson/tomorrow-theme */
-
-/* Tomorrow Comment */
-.hljs-comment,
-.hljs-quote {
-	color: #8e908c;
-}
-
-/* Tomorrow Red */
-.hljs-variable,
-.hljs-template-variable,
-.hljs-tag,
-.hljs-name,
-.hljs-selector-id,
-.hljs-selector-class,
-.hljs-regexp,
-.hljs-deletion {
-	color: #c82829;
-}
-
-/* Tomorrow Orange */
-.hljs-number,
-.hljs-built_in,
-.hljs-builtin-name,
-.hljs-literal,
-.hljs-type,
-.hljs-params,
-.hljs-meta,
-.hljs-link {
-	color: #f5871f;
-}
-
-/* Tomorrow Yellow */
-.hljs-attribute {
-	color: #eab700;
-}
-
-/* Tomorrow Green */
-.hljs-string,
-.hljs-symbol,
-.hljs-bullet,
-.hljs-addition {
-	color: #718c00;
-}
-
-/* Tomorrow Blue */
-.hljs-title,
-.hljs-section {
-	color: #4271ae;
-}
-
-/* Tomorrow Purple */
-.hljs-keyword,
-.hljs-selector-tag {
-	color: #8959a8;
-}
-
-.hljs {
-	display: block;
-	overflow-x: auto;
-	color: #4d4d4c;
-	padding: 0.5em;
-}
-
-.hljs-emphasis {
-	font-style: italic;
-}
-
-.hljs-strong {
-	font-weight: bold;
-}
-</style>
-
-<style>
-/*
- * Markdown PDF CSS
- */
-
- body {
-	font-family:  "Meiryo", "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
-}
-
-pre {
-	background-color: #f8f8f8;
-	border: 1px solid #cccccc;
-	border-radius: 3px;
-	overflow-x: auto;
-	white-space: pre-wrap;
-	overflow-wrap: break-word;
-}
-
-pre:not(.hljs) {
-	padding: 23px;
-	line-height: 19px;
-}
-
-blockquote {
-	background: rgba(127, 127, 127, 0.1);
-	border-color: rgba(0, 122, 204, 0.5);
-}
-
-.emoji {
-	height: 1.4em;
-}
-
-/* for inline code */
-:not(pre):not(.hljs) > code {
-	color: #C9AE75; /* Change the old color so it seems less like an error */
-	font-size: inherit;
-}
-
-/* Page Break : use <div class="page"/> to insert page break
--------------------------------------------------------- */
-.page {
-	page-break-after: always;
-}
-
-</style>
-
-</head>
-<body>
-<p><img src=".\logos\logo.png" alt="Skillage I.T" title="Skillage I.T ©"></p>
-<div style="text-align:left; display:inline;">  
-<p><strong>Address:</strong><br>
-4 Collings Street Melbourne 3000<br>
-<strong>Email:</strong><br>
-mikeymikemike@Skillageit.su<br>
-<strong>Phone:</strong><br>
+<h1 id="website-design-proposal"><strong>Website Design Proposal</strong></h1>
+<figure>
+<img src=".\logos\logo.png" title="Skillage I.T ©" alt="" /><figcaption>Skillage I.T</figcaption>
+</figure>
+<p><strong>Address:</strong><br />
+4 Collings Street Melbourne 3000<br />
+<strong>Email:</strong><br />
+mikeymikemike@Skillageit.su<br />
+<strong>Phone:</strong><br />
 0412345678</p>
-</div>
-<hr>
-<div style="text-align:center; display:inline;">  
-<p><strong>Website Proposal for:</strong></p>
-<h3 id="tiger-paws-%C2%A9"><em>Tiger Paws</em> ©</h3>
-<p><strong>Address:</strong><br>
-7 Collings Street Melbourne 3000<br>
-<strong>Email:</strong><br>
-businessmanager@tigerpaws.com.au<br>
-<strong>Phone:</strong><br>
+<h2 id="website-proposal-for"><strong>Website Proposal for:</strong></h2>
+<h3 id="tiger-paws"><em>Tiger Paws</em></h3>
+<p><strong>Address:</strong><br />
+7 Collings Street Melbourne 3000<br />
+<strong>Email:</strong><br />
+businessmanager@tigerpaws.com.au<br />
+<strong>Phone:</strong><br />
 1300IMPAWSIBLE</p>
-</div>
 <h2 id="introduction">Introduction</h2>
 <p>Tiger Paws a botique stuffed toy retail outlet, has requested a website consisting of a <strong>Home Page</strong>, a <strong>Catalog</strong> page, a <strong>Discussion</strong> page, and a <strong>Communication</strong> page. This proposal is written to Tiger Paws to outline their needs and how we at Skillage I.T can ensure they are met within the guidelines mentioned in this document.</p>
 <p>Skillage I.T has a strong background of building websites and offering I.T solutions, including but not limited to:</p>
-<ol>
-<li>
-<p><strong>Online Backups</strong>. We provide server space and Always Online    connections so businesses may backup their important data offsite.</p>
-</li>
-<li>
-<p><strong>Online Payment Processing</strong>. Skillage I.T provides EFT services, helping to process payments and manage all communications with payment providers and the Banks.</p>
-</li>
-<li>
-<p><strong>Online Shopping</strong>. We provide a simple shopping service where our clients can list their items for sale on our Web Portal and their customers can browse, purchase and review utilizing our state of the art infrastructure.</p>
-</li>
-<li>
-<p><strong>Web Site Design &amp; Hosting</strong>. Most importantly in Tiger Paws' case, we offer a complete package of <em><strong>Website Design, Development, Testing, and Hosting</strong></em> on our cloud infrastructure.</p>
-</li>
+<ol type="1">
+<li><p><strong>Online Backups</strong>. We provide server space and Always Online connections so businesses may backup their important data offsite.</p></li>
+<li><p><strong>Online Payment Processing</strong>. Skillage I.T provides EFT services, helping to process payments and manage all communications with payment providers and the Banks.</p></li>
+<li><p><strong>Online Shopping</strong>. We provide a simple shopping service where our clients can list their items for sale on our Web Portal and their customers can browse, purchase and review utilizing our state of the art infrastructure.</p></li>
+<li><p><strong>Web Site Design &amp; Hosting</strong>. Most importantly in Tiger Paws’ case, we offer a complete package of <strong><em>Website Design, Development, Testing, and Hosting</em></strong> on our cloud infrastructure.</p></li>
 </ol>
-<p><em><a href="#Problem-Statement">Problem Statement</a><br>
-<a href="#Goals/proposed-Solutions">Goals/proposed solutions</a><br>
-<a href="#Standard-package-breakdown">Standard package breakdown</a><br>
-<a href="#Extras">Extras</a><br>
-<a href="#Testimonials">Testimonials</a><br>
-<a href="#Next-steps">Next steps</a><br>
+<p><em><a href="#Problem-Statement">Problem Statement</a><br />
+<a href="#Goals/proposed-Solutions">Goals/proposed solutions</a><br />
+<a href="#Standard-package-breakdown">Standard package breakdown</a><br />
+<a href="#Extras">Extras</a><br />
+<a href="#Testimonials">Testimonials</a><br />
+<a href="#Next-steps">Next steps</a><br />
 <a href="#Terms-and-conditions-&amp;-signature-page">Terms and conditions &amp; signature page</a></em></p>
 <h2 id="problem-statement">Problem Statement</h2>
-<p>Lately Tiger Paws has noticed some drastic loss in revenue, and after surveying their customers, they've found that it is due to one main issue <em>&quot;Time&quot;</em>. This is due to the commitments of a modern day family and the fact that it is very hard to find time out of a busy family schedule to go stuffed toy shopping.</p>
-<p>This loss of revenue is also due to the fact the Tiger Paws does not have an online presence. In our experiences we've found that stores without an online presence go out of business generally very quickly unless we can get them a website designed by specialist I.T professionals.</p>
+<p>Lately Tiger Paws has noticed some drastic loss in revenue, and after surveying their customers, they’ve found that it is due to one main issue <em>“Time”</em>. This is due to the commitments of a modern day family and the fact that it is very hard to find time out of a busy family schedule to go stuffed toy shopping.</p>
+<p>This loss of revenue is also due to the fact the Tiger Paws does not have an online presence. In our experiences we’ve found that stores without an online presence go out of business generally very quickly unless we can get them a website designed by specialist I.T professionals.</p>
 <p>The user base is found to be parents in their 20s with some grandparents and great grandparents in the mix. It seems the older generation has been with Tiger Paws for a long time, so we will need to ensure catering for the accessability of the older generations.</p>
 <h2 id="goalsproposed-solutions">Goals/proposed solutions</h2>
 <p>As per the conversation with Tiger Paws, to address these concerns we will need to design a website that contains the following:</p>
 <ul>
-<li>
-<p><strong>A Home Page</strong> - Where people can see specials that they have along with any announcements they would like the community to know about. This needs to incorporate a new logo designed by Skillage I.T.</p>
-</li>
-<li>
-<p>A <strong>Catalog Page</strong>  - Showing the different stuffed toys they have available for purchase. Needs to be an online catalog and not a sales focussed shopping page.</p>
-</li>
-<li>
-<p>A <strong>Discussion Page</strong>  - Where Tiger Paws members can post and have discussions with other community members.</p>
-</li>
-<li>
-<p>A <strong>Communication Page</strong>  - This page will allow users to get in touch with Tiger Paws via email with any questions, and the page should also host their general contact info.</p>
-</li>
+<li><p><strong>A Home Page</strong> - Where people can see specials that they have along with any announcements they would like the community to know about. This needs to incorporate a new logo designed by Skillage I.T.</p></li>
+<li><p>A <strong>Catalog Page</strong> - Showing the different stuffed toys they have available for purchase. Needs to be an online catalog and not a sales focussed shopping page.</p></li>
+<li><p>A <strong>Discussion Page</strong> - Where Tiger Paws members can post and have discussions with other community members.</p></li>
+<li><p>A <strong>Communication Page</strong> - This page will allow users to get in touch with Tiger Paws via email with any questions, and the page should also host their general contact info.</p></li>
 </ul>
 <p>Tiger Paws have advised that the site does not need to be responsive in design (mobile friendly), but we will do this at no extra cost for two reasons:</p>
-<ol>
-<li>
-<p>Parents in their 20's use mobiles more than they use normal computers.</p>
-</li>
-<li>
-<p>Eventually the site will need to be responsive (as most if not all websites are these days), so instead of having to rewrite the website in the future we will ensure it is responsive now and make it easier to upgrade/update in the future.</p>
-</li>
+<ol type="1">
+<li><p>Parents in their 20’s use mobiles more than they use normal computers.</p></li>
+<li><p>Eventually the site will need to be responsive (as most if not all websites are these days), so instead of having to rewrite the website in the future we will ensure it is responsive now and make it easier to upgrade/update in the future.</p></li>
 </ol>
 <p>As we are expecting elderly/disabled users accessing the site, we will need to ensure that the site is compliant with the <strong>Web Content Accessibility Guidelines Version 2.0</strong> (WCAG) AA standard.</p>
 <h2 id="standard-package-breakdown">Standard package breakdown</h2>
-<p>The site will be designed primarily with the Bootstrap Framework and Javascript for the user Interface.<br>
-We are looking to use C# for controlling the server processing.<br>
+<p>The site will be designed primarily with the Bootstrap Framework and Javascript for the user Interface.<br />
+We are looking to use C# for controlling the server processing.<br />
 SQL will be used for the handling and storage of any data.</p>
 <p><strong>Professionally designed logo and site theme</strong> - $1000 - We will work with Tiger Paws to design a logo that suits their needs and catches the eye of any would be consumer. Our proof of concept is below:</p>
-<img src=".\logos\tiger-paws.png" width="250px" height="250px" alt="Tiger Paws Logo" Title="Tiger Paws Logo">
+<figure>
+<img src=".\logos\tiger-paws.png" title="Tiger Paws Logo" alt="" /><figcaption>Tiger Paws</figcaption>
+</figure>
 <p>As per our provided logo, the site colours will be Orange #e78200, light Orange #fac175, and black #000000.</p>
 <p>The font to be used on the site will be a mixture of <strong>Emilys Candy</strong> (same as logo), and <strong>Kranky</strong>.</p>
 <ul>
-<li>Please note colours and backgrounds used in the examples, do not represent the finished product as we will work with Tiger Paws to get a complete colour theme, this will take a lot of back and fourth over a course of a few months.
-Also because of the potentially elderly customer base, we will need to ensure everything is A11y compliant before release.</li>
+<li>Please note colours and backgrounds used in the examples, do not represent the finished product as we will work with Tiger Paws to get a complete colour theme, this will take a lot of back and fourth over a course of a few months. Also because of the potentially elderly customer base, we will need to ensure everything is A11y compliant before release.</li>
 </ul>
 <h3 id="home-page---600-2-3-months"><strong>Home Page</strong> - $600 (2-3 Months)</h3>
 <p>A responsive homepage with logo designed by Skillage I.T.</p>
-<img src=".\screens\homepage.png" width="500px" height="300px" alt="Tiger Paws Homepage" Title="Tiger Paws Homepage">
-<p>The layout will be a grid layout with a short introduction and title in the middle of the page.<br>
-<img src=".\screens\introduction.png" width="500px" height="300px" alt="Introduction" Title="Introduction"></p>
-<p>The will be a card on the top left for <strong>Announcements</strong> with an ability to add a picture in the light orange area.<br>
-<img src=".\screens\announcements.png" width="200px" height="300px" alt="Announcements Card" Title="Announcements Card"></p>
-<p>Underneath the introduction, there will be a grid of specials and community posts to entice users to join the site. This will be a scroll-able page that loads new content as you scroll down further.<br>
-<img src=".\screens\specialsgrid.png" width="500px" height="300px" alt="Specials Grid" Title="Specials Grid"></p>
+<figure>
+<img src=".\screens\homepage.png" title="Tiger Paws Homepage" alt="" /><figcaption>Tiger Paws Homepage</figcaption>
+</figure>
+<p>The layout will be a grid layout with a short introduction and title in the middle of the page.</p>
+<figure>
+<img src=".\screens\introduction.png" title="Introduction" alt="" /><figcaption>Introduction</figcaption>
+</figure>
+<p>There will be a card on the top left for <strong>Announcements</strong> with an ability to add a picture in the light orange area.</p>
+<figure>
+<img src=".\screens\announcements.png" title="Announcements Card" alt="" /><figcaption>Announcements Card</figcaption>
+</figure>
+<p>Underneath the introduction, there will be a grid of specials and community posts to entice users to join the site. This will be a scroll-able page that loads new content as you scroll down further.</p>
+<figure>
+<img src=".\screens\specialsgrid.png" title="Specials Grid" alt="" /><figcaption>Specials Grid</figcaption>
+</figure>
 <p>Up the top of the page there will be a navigation bar with the Tiger Paws Logo and links to the three other pages -</p>
 <ul>
-<li>
-<p><strong>Catalogue</strong> (will be called EXPLORE)</p>
-</li>
-<li>
-<p><strong>Discussion</strong> (will be called FORUM)</p>
-</li>
-<li>
-<p><strong>Communication</strong> (will be called CONTACT)</p>
-</li>
+<li><p><strong>Catalogue</strong> (will be called EXPLORE)</p></li>
+<li><p><strong>Discussion</strong> (will be called FORUM)</p></li>
+<li><p><strong>Communication</strong> (will be called CONTACT)</p></li>
 </ul>
 <p>There are also three other buttons on the top right of all pages -</p>
 <ul>
-<li>
-<p><strong>Magnifying Glass</strong> - For the user to search any content throughout the site.</p>
-</li>
-<li>
-<p><strong>Alerts Button</strong> - For the user to see if they have any post of messages from other users that relate to them.</p>
-</li>
-<li>
-<p><strong>My Profile</strong> - For the user to login and customize their profile to their liking. Also for storing information about the user i.e email, phone number, address etc...</p>
-</li>
+<li><p><strong>Magnifying Glass</strong> - For the user to search any content throughout the site.</p></li>
+<li><p><strong>Alerts Button</strong> - For the user to see if they have any post of messages from other users that relate to them.</p></li>
+<li><p><strong>My Profile</strong> - For the user to login and customize their profile to their liking. Also for storing information about the user i.e email, phone number, address etc…</p></li>
 </ul>
-<img src=".\screens\navbar.png" width="600px" height="20px" alt="Navigation Bar" Title="Navigation Bar">
+<figure>
+<img src=".\screens\navbar.png" title="Navigation Bar" alt="" /><figcaption>Navigation Bar</figcaption>
+</figure>
 <p>Lastly, on the bottom right of each page, to keep up with current trends, there will be a button for the following -</p>
 <ul>
-<li>
-<p><strong>Instagram</strong> - Share the page/image/community post/announcement with your Instagram followers.</p>
-</li>
-<li>
-<p><strong>Twitter</strong> - Share the page/image/community post/announcement with your Twitter followers.</p>
-</li>
-<li>
-<p><strong>Facebook</strong> - Share the page/image/community post/announcement with your Facebook friends.</p>
-</li>
-<li>
-<p><strong>World Wide Web</strong> - Share the page/image/community post/announcement by copying the url to the clipboard and posting it to the world.</p>
-</li>
+<li><p><strong>Instagram</strong> - Share the page/image/community post/announcement with your Instagram followers.</p></li>
+<li><p><strong>Twitter</strong> - Share the page/image/community post/announcement with your Twitter followers.</p></li>
+<li><p><strong>Facebook</strong> - Share the page/image/community post/announcement with your Facebook friends.</p></li>
+<li><p><strong>World Wide Web</strong> - Share the page/image/community post/announcement by copying the url to the clipboard and posting it to the world.</p></li>
 </ul>
-<img src=".\screens\share.png" width="300px" height="50px" alt="Share Buttons" Title="Share Buttons">
+<figure>
+<img src=".\screens\share.png" title="Share Buttons" alt="" /><figcaption>Share Buttons</figcaption>
+</figure>
 <h3 id="explore-catalogue-page---600-2-3-months"><strong>EXPLORE (Catalogue page)</strong> - $600 (2-3 Months)</h3>
 <p>A responsive Catalogue page designed by Skillage I.T.</p>
- <img src=".\screens\catalogue.png" width="500px" height="300px" alt="Catalogue Page" Title="Catalogue Page">
-<p>The layout will take it's style from the home pages' grid layout.</p>
+<figure>
+<img src=".\screens\catalogue.png" title="Catalogue Page" alt="" /><figcaption>Catalogue Page</figcaption>
+</figure>
+<p>The layout will take it’s style from the home pages’ grid layout.</p>
 <p>Starting from the top will be the navigation bar (uniform for all pages).</p>
-<p>The Tiger Paws logo will be a link be to the home page.
-With all other links in the navigation bar exactly the same as the home page.</p>
+<p>The Tiger Paws logo will be a link be to the home page. With all other links in the navigation bar exactly the same as the home page.</p>
 <p>In the middle under the navigation bar, will be a title asking the user to select their category from the 5 that are provided.</p>
 <p>Below the title will be the 5 catagories with a title and a bit of information in the body.</p>
- <img src=".\screens\select-category.png" width="200px" height="300px" alt="Category Selection" Title="Category Selection">
+<figure>
+<img src=".\screens\select-category.png" title="Category Selection" alt="" /><figcaption>Category Selection</figcaption>
+</figure>
 <p>Under the navigation bar to the left will be a catalogue of items, which will be displayed as a grid, the user is able to scroll down continuously as more content loads just out of the viewport.</p>
-<img src=".\screens\catalogue-grid.png" width="500px" height="500px" alt="Catalogue Grid" Title="Catalogue Grid">
+<figure>
+<img src=".\screens\catalogue-grid.png" title="Catalogue Grid" alt="" /><figcaption>Catalogue Grid</figcaption>
+</figure>
 <p>When a user clicks on an image to get more info, there will be a modal show on the right that has information and pricing.</p>
-<img src=".\screens\pricing.png" width="300px" height="250px" alt="Pricing Modal" Title="Pricing Modal">
+<figure>
+<img src=".\screens\pricing.png" title="Pricing Modal" alt="" /><figcaption>Pricing Modal</figcaption>
+</figure>
 <p>Here the user can choose to add it to their Kart, or just simply read about the item.</p>
 <h3 id="forum-community-discussion-page---800-12-24-months"><strong>FORUM (Community Discussion page)</strong> - $800 (12-24 Months)</h3>
 <p>A responsive Community Discussion Forum designed by Skillage I.T.</p>
-<img src=".\screens\forum.png" width="500px" height="300px" alt="Forum Page" Title="Forum Page">
+<figure>
+<img src=".\screens\forum.png" title="Forum Page" alt="" /><figcaption>Forum Page</figcaption>
+</figure>
 <p>Starting from the top, we have exactly the same format as all other pages. With the <strong>Logo</strong>, <strong>Explore</strong>, <strong>Forum</strong>, and <strong>Contact</strong> buttons all in the same position.</p>
 <p>There will be a short introduction to the page up the top in the centre.</p>
-<img src=".\screens\intro-forum.png" width="500px" height="300px" alt="Introduction to the forum" Title="Introduction to the forum">
+<figure>
+<img src=".\screens\intro-forum.png" title="Introduction to the forum" alt="" /><figcaption>Introduction to the forum</figcaption>
+</figure>
 <p>In the middle of the page we will show the top discussion happing, with the most popular ones on the top left in a descending order from left to right.</p>
-<img src=".\screens\top-discussions.png" width="500px" height="300px" alt="Discussions" Title="Discussions">
+<figure>
+<img src=".\screens\top-discussions.png" title="Discussions" alt="" /><figcaption>Discussions</figcaption>
+</figure>
 <p>Each discussion will appear as a card with a picture accompanied by a heading, a body of text, a like button with a count, a comment button with a count, and a share button.</p>
 <p>If the user clicks on the card, they will see a pop-up modal that allows them to view comments and/or join in the discussion.</p>
-<img src=".\screens\posts-and-comments.png" width="400px" height="300px" alt="Comment Modal" Title="Comment Modal">
+<figure>
+<img src=".\screens\posts-and-comments.png" title="Comment Modal" alt="" /><figcaption>Comment Modal</figcaption>
+</figure>
 <p>They can also click on the profile picture to view a larger image of each user.</p>
 <p>Over to the right of the forum page, the user will see a <strong><em>Trending Posts</em></strong> card. This will be an item to show posts that may not have many comments, or post that are in the best interests of the business to show.</p>
-<img src=".\screens\trending posts.png" width="200px" height="300px" alt="Trending Posts Card" Title="Trending Posts Card">
+<figure>
+<img src=".\screens\trending-posts.png" title="Trending Posts Card" alt="" /><figcaption>Comment Modal</figcaption>
+</figure>
 <p>Down the bottom right of the Forum page, we will have the buttons that are on each page to share to various platforms.</p>
 <h3 id="contact-contact-us-page---600-2-3-months"><strong>CONTACT (Contact Us page)</strong> - $600 (2-3 Months)</h3>
-<img src=".\screens\contact-form.png" width="500px" height="300px" alt="Contact Us Form" Title="Contact Us Form">
+<figure>
+<img src=".\screens\contact-form.png" title="Contact Us Form" alt="" /><figcaption>Comment Modal</figcaption>
+</figure>
 <p>The last page will be the Contact page, allowing users to get in touch with Tiger Paws via email. It also hosts their other contact details so users can get in touch any other way.</p>
 <p>On the page, the same template as the other pages still applies. With the Navigation bar having the same buttons, and the share buttons down the button right being exactly the same.</p>
-<p><strong>Total Time and Costs</strong></p>
-<p>33 Months (Maximum)<br>
+<h3 id="total-time-and-costs"><strong>Total Time and Costs</strong></h3>
+<p>33 Months (Maximum)<br />
 $2600</p>
 <h2 id="extras">Extras</h2>
 <p><strong>No extra cost</strong> - Ensure site is compatible with all modern day browsers</p>
-<p><strong>Online Backup</strong> - <strong>$40 per month</strong><br>
+<p><strong>Online Backup</strong> - <strong>$40 per month</strong><br />
 Allow Tiger Paws to ensure they always stay online, wth regular backups sent to the cloud occuring nightly.</p>
 <p><strong>Online Payment Processing</strong> - <strong>$2 per transaction &amp; 3% payment fee</strong></p>
 <p>We are happy to provide Tiger Paws with the payment processing tools to allow them to manage online payments.</p>
 <p><strong>Online Shopping</strong> - $600 an additional page that will allow users to post their products and sell them via Tiger Paws store, ensuring Tiger Paws get paid and get traffic to their website.</p>
 <h2 id="testimonials">Testimonials</h2>
-<p><em>&quot;The Greatest Company I've ever dealt with. Really helped me get my site up and running&quot;</em> - <strong>Bill Gates from Microsoft</strong></p>
-<p><em>&quot;Fantastic Service, Couldn't be happier&quot;</em> - <strong>Joseph Stalin from USSR</strong></p>
-<p><em>&quot;5 out 7, Comparable service&quot;</em> - <strong>Dave from the internet</strong></p>
+<p><em>“The Greatest Company I’ve ever dealt with. Really helped me get my site up and running”</em> - <strong>Bill Gates from Microsoft</strong></p>
+<p><em>“Fantastic Service, Couldn’t be happier”</em> - <strong>Joseph Stalin from USSR</strong></p>
+<p><em>“5 out 7, Comparable service”</em> - <strong>Dave from the internet</strong></p>
 <h2 id="next-steps">Next steps</h2>
 <p>The next steps are important as we will need to get started as soon as possible to avoid any further losses to the business.</p>
 <p>If you choose to proceed, our next steps will be -</p>
-<ol>
-<li>
-<p><strong>Package Customization</strong> - We will work with you to alter the standard web design package to fit your needs, incorporating extras as requested. Once all services are agreed upon, we will finalize our contract with you. This will take 1-2 days.</p>
-</li>
-<li>
-<p><strong>Website Creation</strong> - We will begin the work on the site and ensure compatibility on all browsers. To be completed in about 33 months.</p>
-</li>
-<li>
-<p><strong>Website Regression Testing</strong> - Our developers and testers will do continuous testing on all browsers to ensure everything is working well before release. This will take 1-2 hours (possibly less).</p>
-</li>
+<ol type="1">
+<li><p><strong>Package Customization</strong> - We will work with you to alter the standard web design package to fit your needs, incorporating extras as requested. Once all services are agreed upon, we will finalize our contract with you. This will take 1-2 days.</p></li>
+<li><p><strong>Website Creation</strong> - We will begin the work on the site and ensure compatibility on all browsers. To be completed in about 33 months.</p></li>
+<li><p><strong>Website Regression Testing</strong> - Our developers and testers will do continuous testing on all browsers to ensure everything is working well before release. This will take 1-2 hours (possibly less).</p></li>
 </ol>
 <p>Our website testing procedure normally consists of a team of 4 people using web browsers on both desktop, laptops, Android, and IOS devices. They will click on every button and if they find any bugs, this will be sent to the development team who will then put up the fix to a staging build so the testers can test again before we roll the fix out to production.</p>
 <p>We will be asking Tiger Paws to also test the staging site so they are happy with the build before we roll out to production.</p>
@@ -591,7 +188,4 @@ Allow Tiger Paws to ensure they always stay online, wth regular backups sent to 
 <p>We have attached the WireFrames used as XD files, but also as PDF files so you can view them at your leisure.</p>
 <p>Please let us know if you have any questions by responding with the contact details at the top of the document.</p>
 <p>Or simply sign on the line and send through the completed Document to Skillage I.T.</p>
-<h1 id="sign-here">Sign Here _____________________</h1>
-
-</body>
-</html>
+<h2 id="sign-here-_____________________"><em>Sign Here</em> _____________________</h2>
