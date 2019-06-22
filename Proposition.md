@@ -1,6 +1,6 @@
-![Skillage I.T](.\logos\logo.png "Skillage I.T &copy;")
+# **Website Design Proposal**
 
-<div style="text-align:left; display:inline;">  
+![Skillage I.T](.\logos\logo.png "Skillage I.T &copy;")
 
 **Address:**  
 4 Collings Street Melbourne 3000  
@@ -9,14 +9,9 @@ mikeymikemike@Skillageit.su
 **Phone:**  
 0412345678  
 
-</div>
+## **Website Proposal for:**
 
-<hr>
-
-<div style="text-align:center; display:inline;">  
-
-**Website Proposal for:**
-### *Tiger Paws* &copy;  
+### *Tiger Paws*
 
 **Address:**  
 7 Collings Street Melbourne 3000  
@@ -24,8 +19,6 @@ mikeymikemike@Skillageit.su
 businessmanager@tigerpaws.com.au  
 **Phone:**  
 1300IMPAWSIBLE
-
-</div>
 
 ## Introduction
 
@@ -85,7 +78,7 @@ SQL will be used for the handling and storage of any data.
 
 **Professionally designed logo and site theme** - $1000 - We will work with Tiger Paws to design a logo that suits their needs and catches the eye of any would be consumer. Our proof of concept is below:
 
-<img src=".\logos\tiger-paws.png" width="250px" height="250px" alt="Tiger Paws Logo" Title="Tiger Paws Logo">
+![Tiger Paws](.\logos\tiger-paws.png "Tiger Paws Logo")
 
 As per our provided logo, the site colours will be Orange #e78200, light Orange #fac175, and black #000000.  
 
@@ -98,16 +91,19 @@ Also because of the potentially elderly customer base, we will need to ensure ev
 
 A responsive homepage with logo designed by Skillage I.T.
 
-<img src=".\screens\homepage.png" width="500px" height="300px" alt="Tiger Paws Homepage" Title="Tiger Paws Homepage">
+![Tiger Paws Homepage](.\screens\homepage.png "Tiger Paws Homepage")
 
 The layout will be a grid layout with a short introduction and title in the middle of the page.  
-<img src=".\screens\introduction.png" width="500px" height="300px" alt="Introduction" Title="Introduction"> 
 
-The will be a card on the top left for **Announcements** with an ability to add a picture in the light orange area.  
-<img src=".\screens\announcements.png" width="200px" height="300px" alt="Announcements Card" Title="Announcements Card">  
+![Introduction](.\screens\introduction.png "Introduction")
+
+There will be a card on the top left for **Announcements** with an ability to add a picture in the light orange area.  
+
+![Announcements Card](.\screens\announcements.png "Announcements Card")
 
 Underneath the introduction, there will be a grid of specials and community posts to entice users to join the site. This will be a scroll-able page that loads new content as you scroll down further.  
-<img src=".\screens\specialsgrid.png" width="500px" height="300px" alt="Specials Grid" Title="Specials Grid">
+
+![Specials Grid](.\screens\specialsgrid.png "Specials Grid")
 
 Up the top of the page there will be a navigation bar with the Tiger Paws Logo and links to the three other pages -
 
@@ -125,7 +121,7 @@ There are also three other buttons on the top right of all pages -
 
 * **My Profile** - For the user to login and customize their profile to their liking. Also for storing information about the user i.e email, phone number, address etc...
 
-<img src=".\screens\navbar.png" width="600px" height="20px" alt="Navigation Bar" Title="Navigation Bar">
+![Navigation Bar](.\screens\navbar.png "Navigation Bar")
 
 Lastly, on the bottom right of each page, to keep up with current trends, there will be a button for the following -
 
@@ -137,13 +133,13 @@ Lastly, on the bottom right of each page, to keep up with current trends, there 
 
 * **World Wide Web** - Share the page/image/community post/announcement by copying the url to the clipboard and posting it to the world.
 
-<img src=".\screens\share.png" width="300px" height="50px" alt="Share Buttons" Title="Share Buttons">
+![Share Buttons](.\screens\share.png "Share Buttons")
 
 ### **EXPLORE (Catalogue page)** - $600 (2-3 Months)
 
 A responsive Catalogue page designed by Skillage I.T.  
 
- <img src=".\screens\catalogue.png" width="500px" height="300px" alt="Catalogue Page" Title="Catalogue Page">
+![Catalogue Page](.\screens\catalogue.png "Catalogue Page")
 
 The layout will take it's style from the home pages' grid layout.
 
@@ -154,17 +150,17 @@ With all other links in the navigation bar exactly the same as the home page.
 
 In the middle under the navigation bar, will be a title asking the user to select their category from the 5 that are provided.  
 
-Below the title will be the 5 catagories with a title and a bit of information in the body. 
+Below the title will be the 5 catagories with a title and a bit of information in the body.
 
- <img src=".\screens\select-category.png" width="200px" height="300px" alt="Category Selection" Title="Category Selection">
+ ![Category Selection](.\screens\select-category.png "Category Selection")
 
 Under the navigation bar to the left will be a catalogue of items, which will be displayed as a grid, the user is able to scroll down continuously as more content loads just out of the viewport.
 
-<img src=".\screens\catalogue-grid.png" width="500px" height="500px" alt="Catalogue Grid" Title="Catalogue Grid">
+![Catalogue Grid](.\screens\catalogue-grid.png "Catalogue Grid")
 
 When a user clicks on an image to get more info, there will be a modal show on the right that has information and pricing.  
 
-<img src=".\screens\pricing.png" width="300px" height="250px" alt="Pricing Modal" Title="Pricing Modal">
+![Pricing Modal](.\screens\pricing.png "Pricing Modal")
 
 Here the user can choose to add it to their Kart, or just simply read about the item.
 
@@ -172,46 +168,47 @@ Here the user can choose to add it to their Kart, or just simply read about the 
 
 A responsive Community Discussion Forum designed by Skillage I.T.
 
-<img src=".\screens\forum.png" width="500px" height="300px" alt="Forum Page" Title="Forum Page">
+![Forum Page](.\screens\forum.png "Forum Page")
 
 Starting from the top, we have exactly the same format as all other pages. With the **Logo**, **Explore**, **Forum**, and **Contact** buttons all in the same position.
 
 There will be a short introduction to the page up the top in the centre.
 
-<img src=".\screens\intro-forum.png" width="500px" height="300px" alt="Introduction to the forum" Title="Introduction to the forum">
+![Introduction to the forum](.\screens\intro-forum.png "Introduction to the forum")
 
 In the middle of the page we will show the top discussion happing, with the most popular ones on the top left in a descending order from left to right.
 
-<img src=".\screens\top-discussions.png" width="500px" height="300px" alt="Discussions" Title="Discussions">
+![Discussions](.\screens\top-discussions.png "Discussions")
 
 Each discussion will appear as a card with a picture accompanied by a heading, a body of text, a like button with a count, a comment button with a count, and a share button.
 
 If the user clicks on the card, they will see a pop-up modal that allows them to view comments and/or join in the discussion.
 
-<img src=".\screens\posts-and-comments.png" width="400px" height="300px" alt="Comment Modal" Title="Comment Modal">
+![Comment Modal](.\screens\posts-and-comments.png "Comment Modal")
 
 They can also click on the profile picture to view a larger image of each user.
 
 Over to the right of the forum page, the user will see a **_Trending Posts_** card. This will be an item to show posts that may not have many comments, or post that are in the best interests of the business to show.
 
-<img src=".\screens\trending posts.png" width="200px" height="300px" alt="Trending Posts Card" Title="Trending Posts Card">
+![Comment Modal](.\screens\trending-posts.png "Trending Posts Card")
 
 Down the bottom right of the Forum page, we will have the buttons that are on each page to share to various platforms.
 
 ### **CONTACT (Contact Us page)** - $600 (2-3 Months)
 
-<img src=".\screens\contact-form.png" width="500px" height="300px" alt="Contact Us Form" Title="Contact Us Form">
+![Comment Modal](.\screens\contact-form.png "Contact Us Form")
 
-The last page will be the Contact page, allowing users to get in touch with Tiger Paws via email. It also hosts their other contact details so users can get in touch any other way. 
+The last page will be the Contact page, allowing users to get in touch with Tiger Paws via email. It also hosts their other contact details so users can get in touch any other way.
 
 On the page, the same template as the other pages still applies. With the Navigation bar having the same buttons, and the share buttons down the button right being exactly the same.
 
-**Total Time and Costs**
+### **Total Time and Costs**
 
 33 Months (Maximum)  
 $2600
 
 ## Extras
+
 **No extra cost** - Ensure site is compatible with all modern day browsers
 
 **Online Backup** - **$40 per month**  
@@ -219,12 +216,9 @@ $2600
 
  **Online Payment Processing** - **$2 per transaction & 3% payment fee**
 
-We are happy to provide Tiger Paws with the payment processing tools to allow them to manage online payments. 
+We are happy to provide Tiger Paws with the payment processing tools to allow them to manage online payments.
 
-**Online Shopping** - $600 an additional page that will allow users to post their products and sell them via Tiger Paws store, ensuring Tiger Paws get paid and get traffic to their website. 
-
-
-
+**Online Shopping** - $600 an additional page that will allow users to post their products and sell them via Tiger Paws store, ensuring Tiger Paws get paid and get traffic to their website.
 
 ## Testimonials
 
@@ -236,9 +230,9 @@ We are happy to provide Tiger Paws with the payment processing tools to allow th
 
 ## Next steps
 
-The next steps are important as we will need to get started as soon as possible to avoid any further losses to the business. 
+The next steps are important as we will need to get started as soon as possible to avoid any further losses to the business.
 
-If you choose to proceed, our next steps will be - 
+If you choose to proceed, our next steps will be -
 
 1. **Package Customization** - We will work with you to alter the standard web design package to fit your needs, incorporating extras as requested. Once all services are agreed upon, we will finalize our contract with you. This will take 1-2 days.
 
@@ -258,9 +252,8 @@ This Proposal will be sent via email, it is written in Markdown, so it is recomm
 
 We have attached the WireFrames used as XD files, but also as PDF files so you can view them at your leisure.
 
-
 Please let us know if you have any questions by responding with the contact details at the top of the document.
 
 Or simply sign on the line and send through the completed Document to Skillage I.T.
 
-# Sign Here _____________________
+## *Sign Here* _____________________
