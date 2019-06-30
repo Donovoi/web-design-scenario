@@ -124,23 +124,6 @@ Once the master gets a request, it will identify which shard has the data and se
 
 The mast SQL server will also communicate with the Two **Document Databases**. The document databases, will be hosting files such as images, PDFs, tmp files, and any other non SQL data.
 
-### DevOps Tools and Frameworks:
-
-![DevOps Cycle](.\screens\devops-cycle.png "DevOps Cycle")
-
-As with any project, there needs to be a a continuous cycle of Planing, Development, Feedback, and Improvement. Below are some of the Framework and Tools, we will use to make the best possible user experience:
-
-**Planning**: Has been done with Tiger Paws through a meeting and in depth discussion about what they would like to achieve. 
-
-**Development**: We will be using tools such as -
-
-Github - For Version Control
-Docker - For container management and ease of development
-Docker Compose - To build our containers
-
-**Testing**:
-
-
 **Professionally designed logo and site theme** - $1000 - We will work with Tiger Paws to design a logo that suits their needs and catches the eye of any would be consumer. Our proof of concept is below:
 
 ![Tiger Paws](.\logos\tiger-paws.png "Tiger Paws Logo")
@@ -303,13 +286,87 @@ If you choose to proceed, our next steps will be -
 
 2. **Website Creation** - We will begin the work on the site and ensure compatibility on all browsers. To be completed in about 33 months.
 
-3. **Website Regression Testing** - Our developers and testers will do continuous testing on all browsers to ensure everything is working well before release. This will take 1-2 hours (possibly less).
+3. **Website Usability Testing** - 
 
-Our website testing procedure normally consists of a team of 4 people using web browsers on both desktop, laptops, Android, and IOS devices. They will click on every button and if they find any bugs, this will be sent to the development team who will then put up the fix to a staging build so the testers can test again before we roll the fix out to production.
+Usability Testing is a big part of getting the best value out of your website. This will ensure we give the best experience to users of all shapes sizes and origins. Things like making the site A11y compliant is a big part of why users come to your site.
 
-We will be asking Tiger Paws to also test the staging site so they are happy with the build before we roll out to production.
+The usability test process is a contiuous feedback circle. Pictured below:
 
-If all goes well and we are W3C, and A11y compliant, we will roll out the build to the live production site.  
+![Usability Testing](.\screens\testing-circle.jpg "Usability Testing")
+
+The test plan is as Follows:
+
+**Scope**: The Tiger Paws website usability test will encompass the whole user journey from landing on the home page to purchasing an item or commenting on a discussion in the forum. Multiple device types will be tested including - Apple iPhone XS, Google Pixel, Apple iPad 6th, and the most popular web browsers on Desktop/Laptops (Chrome, Internet Explorer, Edge, FireFox, Opera).
+
+Testing will be done for six user types.  
+
+    * Grandparents (60+ years)
+    * Young Parents (20-59 years)
+    * Disabled Elderly (60+ years)
+    * Disabled Young Parents (20-59 years)
+    * Children (4-19 years)
+    * Disabled Children (4-19 years)
+  
+**Purpose**:
+The questions that we want first to answer through Usability Testing are -
+
+    * Can users easily reach their goal? 
+    * Can users understand what each button does?
+    * Does the user agree with the Information Architecture?
+    * Does the user understand the content?
+    * How relevant is the content?
+    * How long does it take each user category to reach their goal on average?
+    * Does the content on the page make it easy for disabled users to achieve their goal? 
+More questions will come up as we do more rounds of testing.
+
+**Schedule & Location**: The testing will be done both online and onsite at Tiger Paws head office. Schedule to be determined at a later date. 
+
+**Sessions**: Testing sessions will be between 1 hour to 90 minutes. We will need to leave time (about 30 mins) between each test so we can reset up our environment, and discuss what happened.
+
+**Equipment**: The equipment used will be Apple iPhone XS, Google Pixel, Apple iPad 6th, and the most popular web browsers on Desktop/Laptops (Chrome, Internet Explorer, Edge, FireFox, Opera).
+We will be recording these sessions both on video camera and on the device via Team Viewer.  
+Other equipment will include any special accessibility tools, such as screen readers.
+
+**Participants**: The Following Particpants will be asked to take part in our usability testing -
+    
+    * Grandparents (60+ years)
+    * Young Parents (20-59 years)
+    * Disabled Elderly (60+ years)
+    * Disabled Young Parents (20-59 years)
+    * Children (4-19 years)
+    * Disabled Children (4-19 years) 
+
+We will be asking for 5-7 participants of each category.
+They will be recruited via a warm calling campaign managed by Tiger Paws. The script the callers will use should go along the lines of:
+
+Hello, I am **NAME**. I am calling today on behalf of Tiger Paws.
+
+Tiger Paws is developing a new website to enable sharing and buying online of all things furry! Because you have been a long time loyal customer and as part of their development process they would like to get reaction from you about the possible design for the website.
+If you are selected to participate, the surveys will take less than 100 minutes to complete and you will be compensated for your time with a $10 iTunes Gift Card.
+You will have until **DAY, DATE, TIME** to complete the survey.
+
+* Would you and your partner be interested in participating?
+
+* Yes! *Proceed to take their details*
+* No *Thank them for their time and terminate the call.*
+
+**Scenarios**:
+Testers will be asked to do the following:
+
+1. Navigate to the Home Page
+2. Navigate to the Catalog Page
+3. Navigate to the Forum
+4. Navigate to the Contact Us page
+5. Be asked to complete a purchase from start to finish
+6. Be asked to post a new forum topic
+7. Be asked to login and change details on their account
+8. Be asked to fill in the Contact Us form
+9. Be asked to reply to a comment on a forum post
+10. Be asked how they feel navigating to each page
+
+These scenarios will apply to both mobile and Desktop/Laptop
+
+Metrics: 
 
 ## Terms and conditions & signature page
 
