@@ -72,9 +72,15 @@ As we are expecting elderly/disabled users accessing the site, we will need to e
 
 ## Standard package breakdown
 
-The site will be designed primarily with the Bootstrap Framework and Javascript for the user Interface.  
-We are looking to use C# for controlling the server processing.  
-SQL will be used for the handling and storage of any data.
+The site will be designed with scalability in mind, ensuring that during busy times we can keep up with demands, and during quite times we can scale back to ensure low cost to the owners of Tiger Paws.  
+
+Below you will see a network diagram of the proposed website infrastructure.  
+
+![Tiger Paws Infrastructure](.\screens\tiger-paws-infrastructure.png "Tiger Paws Infrastructure")
+
+Facing the internet we will have a **Firewall** and **Load Balancer** ensuring security and controlling the traffic flow to the **Reverse Proxy**. This for security and to make sure we divert the traffic depending on the demand at the time.
+
+The **Reverse Proxy** will be controlled by the Load Balancer. 
 
 **Professionally designed logo and site theme** - $1000 - We will work with Tiger Paws to design a logo that suits their needs and catches the eye of any would be consumer. Our proof of concept is below:
 
