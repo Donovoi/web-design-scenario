@@ -78,9 +78,39 @@ Below you will see a network diagram of the proposed website infrastructure.
 
 ![Tiger Paws Infrastructure](.\screens\tiger-paws-infrastructure.png "Tiger Paws Infrastructure")
 
-Facing the internet we will have a **Firewall** and **Load Balancer** ensuring security and controlling the traffic flow to the **Reverse Proxy**. This for security and to make sure we divert the traffic depending on the demand at the time.
+### Frontend Architecture and Frameworks:
 
-The **Reverse Proxy** will be controlled by the Load Balancer. 
+Facing the internet will be a **Firewall** and **Load Balancer** ensuring security and controlling the traffic flow to the **Reverse Proxy**.This will be managed internally by Skillage I.T and will also include a **Web Application Firewall** or **WAF** as part of the package. This is for security and to make sure we divert the traffic depending on the demand at the time.
+
+The **Reverse Proxy** will be controlled by the Load Balancer. Sending traffic to the **Web Server** that is not already under load or a brand new instance of a **Web Server**, if the need be. The **Reverse Proxy** software will be **NGinx**.
+
+Behind the Reverse Proxy, **Web Services** running with the traffic going to each depending on what the **Load Balancer** and **Reverse Proxy** decide at the time.
+
+Skillage I.T's **Web Services** are designed to be quite malleable, with the opportunity to scale either horizontally (adding more machines to process the work load) or vertically (adding more resources like CPU power, or RAM). Depending on the workload and Tiger Paw's budget, we can add either or both, with the ability to scale back as needed.
+
+To begin with we recommend running two **Web Servers** to handle traffic, allowing for concurrent processing and giving a bit of redundancy incase of hardware failure.
+
+The **Web Servers** will be running Nginx in Alpine Linux containers.
+Containerizing our applications ensures security and agility as we scale depending on the workload.
+Using Alpine Linux helps to make sure the container size stays as small as possible and gives the user the best possible experience.
+
+Using Nginx gives us the ability to easily handle high amounts of workload and integrate seamlessly with other Frameworks.
+
+The front end of the site will be run and developed using the following Frameworks:
+
+HTML: Will be written with **Bootstrap** - this will bring a familiar look o the user and will shorten development time as we do will not need to create our own components from scratch.
+
+CSS: Will be written with the HTML using **Bootstrap**, easy to use and familiar to the user. **Bootrap** also helps to ensure a responsive design.
+
+JS: Javascript and other CSS, and HTML elements will be written using a Framework called **Svelte**.
+
+The **Svelte** Framework is light-weight and extremely fast. **Svelte** updates only the needed part of the DOM and does not create a virtual DOM before updating a webpage, unlike frameworks such as React and Vue.
+
+After the site has been written we will then compile and bundle everything into a small package using a static module bundler called **webpack**. Using webpack means that we will be loading less files, giving the user a better experience when they land on the Tiger Paws website.
+
+### Backend Architecture and Frameworks:
+
+The Webserves will be talking directly to a **Redis** database. 
 
 **Professionally designed logo and site theme** - $1000 - We will work with Tiger Paws to design a logo that suits their needs and catches the eye of any would be consumer. Our proof of concept is below:
 
