@@ -96,6 +96,8 @@ Using Alpine Linux helps to make sure the container size stays as small as possi
 
 Using Nginx gives us the ability to easily handle high amounts of workload and integrate seamlessly with other Frameworks.
 
+Nginx also give us the ability to take advantage of **Google's PageSpeed** project. Rewriting & Minifying HTML,CSS,Javascript, among many other things will give the user a great experience and help to keep down costs, when it comes to optimization.
+
 The front end of the site will be run and developed using the following Frameworks:
 
 HTML: Will be written with **Bootstrap** - this will bring a familiar look o the user and will shorten development time as we do will not need to create our own components from scratch.
@@ -110,7 +112,34 @@ After the site has been written we will then compile and bundle everything into 
 
 ### Backend Architecture and Frameworks:
 
-The Webserves will be talking directly to a **Redis** database. 
+**ASP.NET Core 3.0** will be the backend Programming Framework that is used to talk to both the SQL Servers, Document Servers, Redis Server, and Web Application servers. Instead of talking to a Kestral webserver which is default for ASP.NET Core, we will be communicating with Nginx web servers as discussed earlier.
+
+The Web Servers will be talking directly to a **Redis** caching database. Redis is an application with the ability to cache website data. In short, it means that there will be less requests to the database and quicker response time for the user.
+
+Communicating with the **Redis** server will be an SQL Server acting as a "Master". The master will help to identify which of the databases hold the shard that has been requested by the Webserver instance.
+
+To achieve scalability and high performance, we will be using two "Slave" databases (to start with)that will act as Shards.
+
+Once the master gets a request, it will identify which shard has the data and send it back to the Web Servers. The Master will also provide statistics and allow us to scale out if both shards are under heavy load for a long period of time. The Sharding Strategy we use is called the Hash Strategy.
+
+The mast SQL server will also communicate with the Two **Document Databases**. The document databases, will be hosting files such as images, PDFs, tmp files, and any other non SQL data.
+
+### DevOps Tools and Frameworks:
+
+![DevOps Cycle](.\screens\devops-cycle.png "DevOps Cycle")
+
+As with any project, there needs to be a a continuous cycle of Planing, Development, Feedback, and Improvement. Below are some of the Framework and Tools, we will use to make the best possible user experience:
+
+**Planning**: Has been done with Tiger Paws through a meeting and in depth discussion about what they would like to achieve. 
+
+**Development**: We will be using tools such as -
+
+Github - For Version Control
+Docker - For container management and ease of development
+Docker Compose - To build our containers
+
+**Testing**:
+
 
 **Professionally designed logo and site theme** - $1000 - We will work with Tiger Paws to design a logo that suits their needs and catches the eye of any would be consumer. Our proof of concept is below:
 
