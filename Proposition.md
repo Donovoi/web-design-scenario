@@ -78,7 +78,7 @@ Below you will see a network diagram of the proposed website infrastructure.
 
 ![Tiger Paws Infrastructure](.\screens\tiger-paws-infrastructure.png "Tiger Paws Infrastructure")
 
-### Frontend Architecture and Frameworks:
+### Frontend Architecture and Frameworks
 
 Facing the internet will be a **Firewall** and **Load Balancer** ensuring security and controlling the traffic flow to the **Reverse Proxy**.This will be managed internally by Skillage I.T and will also include a **Web Application Firewall** or **WAF** as part of the package. This is for security and to make sure we divert the traffic depending on the demand at the time.
 
@@ -110,7 +110,7 @@ The **Svelte** Framework is light-weight and extremely fast. **Svelte** updates 
 
 After the site has been written we will then compile and bundle everything into a small package using a static module bundler called **webpack**. Using webpack means that we will be loading less files, giving the user a better experience when they land on the Tiger Paws website.
 
-### Backend Architecture and Frameworks:
+### Backend Architecture and Frameworks
 
 **ASP.NET Core 3.0** will be the backend Programming Framework that is used to talk to both the SQL Servers, Document Servers, Redis Server, and Web Application servers. Instead of talking to a Kestral webserver which is default for ASP.NET Core, we will be communicating with Nginx web servers as discussed earlier.
 
@@ -286,7 +286,7 @@ If you choose to proceed, our next steps will be -
 
 2. **Website Creation** - We will begin the work on the site and ensure compatibility on all browsers. To be completed in about 33 months.
 
-3. **Website Usability Testing** - 
+3. **Website Usability Testing** -
 
 Usability Testing is a big part of getting the best value out of your website. This will ensure we give the best experience to users of all shapes sizes and origins. Things like making the site A11y compliant is a big part of why users come to your site.
 
@@ -319,7 +319,7 @@ The questions that we want first to answer through Usability Testing are -
     * Does the content on the page make it easy for disabled users to achieve their goal? 
 More questions will come up as we do more rounds of testing.
 
-**Schedule & Location**: The testing will be done both online and onsite at Tiger Paws head office. Schedule to be determined at a later date. 
+**Schedule & Location**: The testing will be done both online and onsite at Tiger Paws head office. Schedule to be determined at a later date.
 
 **Sessions**: Testing sessions will be between 1 hour to 90 minutes. We will need to leave time (about 30 mins) between each test so we can reset up our environment, and discuss what happened.
 
@@ -328,7 +328,7 @@ We will be recording these sessions both on video camera and on the device via T
 Other equipment will include any special accessibility tools, such as screen readers.
 
 **Participants**: The Following Particpants will be asked to take part in our usability testing -
-    
+
     * Grandparents (60+ years)
     * Young Parents (20-59 years)
     * Disabled Elderly (60+ years)
@@ -366,7 +366,18 @@ Testers will be asked to do the following:
 
 These scenarios will apply to both mobile and Desktop/Laptop
 
-Metrics: 
+**Metrics**: The Metrics are how we will measure success and failure.
+Metrics include but are not limited to:
+
+* Successful Task Completion - Each scenario requires the participant to obtain specific data that would be used in a typical task. The scenario is successfully completed when the participant indicates they have found the answer or completed the task goal.
+
+* Critical Errors - These are things that prevent Task Completion, such as the site returning the wrong data, or the user being unable to complete the task.
+
+* Non-Critical Errors - These are errors that are easily recovered by the participant and do not prevent the successful completion of the task.
+
+* Time On Task - The amount of time it takes to complete any given task.
+
+* Likes, Dislikes and Recommendations: Participants provide what they liked, diskliked, wanted, and needed from the website to complete the given task.
 
 ## Terms and conditions & signature page
 
