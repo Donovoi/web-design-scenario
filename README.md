@@ -1,2 +1,2 @@
 # web-design-scenario
-This is for my Web Design Scenario Assignment
+A website design proposal I created for an assessment
